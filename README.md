@@ -1,4 +1,4 @@
-# PizzaWeb
+# PizzeriaWeb
 progetto di gruppo A-B-C
 Ogni sviluppatore deve aggiungere due portate nel proprio menu
 -sviluppatore a asseganto al menu pizze
