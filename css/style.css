@@ -1,0 +1,465 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #c83b2f;
+    --black: #171717;
+    --gray: #6b6b6b;
+    --light: #f8f7f4;
+    --white: #ffffff;
+    --border: #dedbd5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    background: var(--light);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(248, 247, 244, 0.92);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #e8e6e1;
+}
+
+.navbar {
+    max-width: 1200px;
+    height: 72px;
+
+    margin: auto;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+
+    list-style: none;
+
+    font-size: 14px;
+}
+
+.nav-links a {
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--red);
+}
+
+.nav-button {
+    padding: 11px 18px;
+
+    border-radius: 30px;
+
+    background: var(--black);
+    color: white;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background: var(--red);
+}
+
+
+/* =========================
+   GENERALE
+========================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 110px 24px;
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+
+    color: var(--red);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    font-size: clamp(38px, 5vw, 60px);
+
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.section-description {
+    max-width: 400px;
+    color: var(--gray);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding-top: 150px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    line-height: 0.95;
+    letter-spacing: -5px;
+}
+
+.hero-description {
+    max-width: 480px;
+
+    margin-bottom: 32px;
+
+    color: var(--gray);
+
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.button-primary {
+    background: var(--red);
+    color: white;
+}
+
+.button-primary:hover {
+    background: #a82f26;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    border: 1px solid #d8d5cf;
+}
+
+.button-secondary:hover {
+    background: white;
+}
+
+.hero-image {
+    height: 500px;
+
+    border-radius: 30px;
+
+    background:
+        url("../images/hero-pizza.jpg")
+        center / cover;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    background: var(--white);
+}
+
+.pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1px;
+
+    background: var(--border);
+    border: 1px solid var(--border);
+}
+
+.pizza-card {
+    padding: 30px;
+
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    transition: 0.2s;
+}
+
+.pizza-card:hover {
+    background: #faf9f6;
+}
+
+.pizza-card h3 {
+    margin-bottom: 7px;
+
+    font-size: 19px;
+}
+
+.pizza-card p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.pizza-card span {
+    color: var(--red);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.about-image {
+    height: 520px;
+
+    border-radius: 30px;
+
+    background:
+        url("../images/about-pizza.jpg")
+        center / cover;
+}
+
+.about-number {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--red);
+
+    font-size: 70px;
+    font-weight: bold;
+
+    letter-spacing: -5px;
+}
+
+.about-content p:not(.eyebrow) {
+    margin-top: 24px;
+
+    color: var(--gray);
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTATTI
+========================= */
+
+.contact {
+    background: var(--black);
+    color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    margin-top: 60px;
+}
+
+.contact-grid h3 {
+    margin-bottom: 15px;
+
+    color: #999;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-grid p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 24px;
+
+    background: var(--black);
+
+    color: #777;
+
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .hero-image {
+        height: 400px;
+    }
+
+    .section-header {
+        display: block;
+    }
+
+    .section-description {
+        margin-top: 20px;
+    }
+
+    .pizza-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        height: 400px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
