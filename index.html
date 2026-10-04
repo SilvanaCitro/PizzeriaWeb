@@ -1,299 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
+    <!-- Ciao, Silvana -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORNO — Pizzeria</title>
 
-    <title>FORNO — Pizzeria</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo"> FORNO<span>.</span> </a>
 
-<body>
+                <ul class="nav-links">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#chi-siamo">Chi siamo</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
 
-    <header>
-        <nav class="navbar">
+                <a href="#contatti" class="nav-button"> Prenota </a>
+            </nav>
+        </header>
 
-            <a href="index.html" class="logo">
-                FORNO<span>.</span>
-            </a>
+        <main>
+            <!-- HERO -->
 
-            <ul class="nav-links">
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#chi-siamo">Chi siamo</a></li>
-                <li><a href="#contatti">Contatti</a></li>
-            </ul>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="eyebrow">Pizzeria contemporanea</p>
 
-            <a href="#contatti" class="nav-button">
-                Prenota
-            </a>
+                        <h1>
+                            Pizza.<br />
+                            Semplice.
+                        </h1>
 
-        </nav>
-    </header>
+                        <p class="hero-description">
+                            Ingredienti scelti, impasto a lunga lievitazione e cottura nel forno a legna. Niente di più.
+                            Niente di meno.
+                        </p>
 
+                        <div class="buttons">
+                            <a href="#menu" class="button button-primary"> Scopri il menu </a>
 
-    <main>
-
-        <!-- HERO -->
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <div class="hero-text">
-
-                    <p class="eyebrow">
-                        Pizzeria contemporanea
-                    </p>
-
-                    <h1>
-                        Pizza.<br>
-                        Semplice.
-                    </h1>
-
-                    <p class="hero-description">
-                        Ingredienti scelti, impasto a lunga lievitazione
-                        e cottura nel forno a legna.
-                        Niente di più. Niente di meno.
-                    </p>
-
-                    <div class="buttons">
-
-                        <a href="#menu" class="button button-primary">
-                            Scopri il menu
-                        </a>
-
-                        <a href="#contatti" class="button button-secondary">
-                            Dove siamo?
-                        </a>
-
+                            <a href="#contatti" class="button button-secondary"> Dove siamo? </a>
+                        </div>
                     </div>
 
+                    <div class="hero-image"></div>
                 </div>
+            </section>
 
-                <div class="hero-image"></div>
+            <!-- MENU -->
 
-            </div>
+            <section class="menu" id="menu">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Il menu</h2>
 
-        </section>
-
-
-        <!-- MENU -->
-
-        <section class="menu" id="menu">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <h2 class="section-title">
-                        Il menu
-                    </h2>
-
-                    <p class="section-description">
-                        Poche pizze, ingredienti di qualità.
-                        Il nostro menu segue le stagioni.
-                    </p>
-
-                </div>
-
-
-                <div class="pizza-grid">
-
-                    <article class="pizza-card">
-                        <div>
-                            <h3>Margherita</h3>
-                            <p>
-                                Pomodoro, fiordilatte, basilico
-                            </p>
-                        </div>
-
-                        <span>€ 8</span>
-                    </article>
-
-
-                    <article class="pizza-card">
-                        <div>
-                            <h3>Marinara</h3>
-                            <p>
-                                Pomodoro, aglio, origano
-                            </p>
-                        </div>
-
-                        <span>€ 7</span>
-                    </article>
-
-
-                    <article class="pizza-card">
-                        <div>
-                            <h3>Diavola</h3>
-                            <p>
-                                Pomodoro, mozzarella, salame piccante
-                            </p>
-                        </div>
-
-                        <span>€ 10</span>
-                    </article>
-
-
-                    <article class="pizza-card">
-                        <div>
-                            <h3>Napoli</h3>
-                            <p>
-                                Pomodoro, acciughe, capperi, olive
-                            </p>
-                        </div>
-
-                        <span>€ 10</span>
-                    </article>
-
-
-                    <article class="pizza-card">
-                        <div>
-                            <h3>Quattro Formaggi</h3>
-                            <p>
-                                Fior di latte, gorgonzola,
-                                taleggio, parmigiano
-                            </p>
-                        </div>
-
-                        <span>€ 11</span>
-                    </article>
-
-
-                    <article class="pizza-card">
-                        <div>
-                            <h3>La Speciale</h3>
-                            <p>
-                                Burrata, pomodorini,
-                                basilico, olio EVO
-                            </p>
-                        </div>
-
-                        <span>€ 13</span>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CHI SIAMO -->
-
-        <section class="about" id="chi-siamo">
-
-            <div class="container about-grid">
-
-                <div class="about-image"></div>
-
-                <div class="about-content">
-
-                    <p class="eyebrow">
-                        La nostra storia
-                    </p>
-
-                    <span class="about-number">
-                        01
-                    </span>
-
-                    <h2 class="section-title">
-                        Pochi ingredienti.
-                        Tanto sapore.
-                    </h2>
-
-                    <p>
-                        Crediamo che una buona pizza non abbia bisogno
-                        di essere complicata.
-                    </p>
-
-                    <p>
-                        Selezioniamo farine italiane, pomodori maturati
-                        al sole e ingredienti freschi.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTATTI -->
-
-        <section class="contact" id="contatti">
-
-            <div class="container">
-
-                <p class="eyebrow">
-                    Vieni a trovarci
-                </p>
-
-                <h2 class="section-title">
-                    Passa a trovarci.
-                </h2>
-
-
-                <div class="contact-grid">
-
-                    <div>
-                        <h3>Indirizzo</h3>
-
-                        <p>
-                            Via Roma 42<br>
-                            Napoli, Italia
+                        <p class="section-description">
+                            Poche pizze, ingredienti di qualità. Il nostro menu segue le stagioni.
                         </p>
                     </div>
 
+                    <div class="pizza-grid">
+                        <article class="pizza-card">
+                            <div>
+                                <h3>Margherita</h3>
+                                <p>Pomodoro, fiordilatte, basilico</p>
+                            </div>
 
-                    <div>
-                        <h3>Orari</h3>
+                            <span>€ 8</span>
+                        </article>
 
-                        <p>
-                            Martedì — Domenica<br>
-                            19:00 — 23:30
-                        </p>
+                        <article class="pizza-card">
+                            <div>
+                                <h3>Marinara</h3>
+                                <p>Pomodoro, aglio, origano</p>
+                            </div>
+
+                            <span>€ 7</span>
+                        </article>
+
+                        <article class="pizza-card">
+                            <div>
+                                <h3>Diavola</h3>
+                                <p>Pomodoro, mozzarella, salame piccante</p>
+                            </div>
+
+                            <span>€ 10</span>
+                        </article>
+
+                        <article class="pizza-card">
+                            <div>
+                                <h3>Napoli</h3>
+                                <p>Pomodoro, acciughe, capperi, olive</p>
+                            </div>
+
+                            <span>€ 10</span>
+                        </article>
+
+                        <article class="pizza-card">
+                            <div>
+                                <h3>Quattro Formaggi</h3>
+                                <p>Fior di latte, gorgonzola, taleggio, parmigiano</p>
+                            </div>
+
+                            <span>€ 11</span>
+                        </article>
+
+                        <article class="pizza-card">
+                            <div>
+                                <h3>La Speciale</h3>
+                                <p>Burrata, pomodorini, basilico, olio EVO</p>
+                            </div>
+
+                            <span>€ 13</span>
+                        </article>
                     </div>
-
-
-                    <div>
-                        <h3>Contatti</h3>
-
-                        <p>
-                            +39 081 123 4567<br>
-                            info@fornopizzeria.it
-                        </p>
-                    </div>
-
                 </div>
+            </section>
 
+            <!-- CHI SIAMO -->
+
+            <section class="about" id="chi-siamo">
+                <div class="container about-grid">
+                    <div class="about-image"></div>
+
+                    <div class="about-content">
+                        <p class="eyebrow">La nostra storia</p>
+
+                        <span class="about-number"> 01 </span>
+
+                        <h2 class="section-title">Pochi ingredienti. Tanto sapore.</h2>
+
+                        <p>Crediamo che una buona pizza non abbia bisogno di essere complicata.</p>
+
+                        <p>Selezioniamo farine italiane, pomodori maturati al sole e ingredienti freschi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTATTI -->
+
+            <section class="contact" id="contatti">
+                <div class="container">
+                    <p class="eyebrow">Vieni a trovarci</p>
+
+                    <h2 class="section-title">Passa a trovarci.</h2>
+
+                    <div class="contact-grid">
+                        <div>
+                            <h3>Indirizzo</h3>
+
+                            <p>
+                                Via Roma 42<br />
+                                Napoli, Italia
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Orari</h3>
+
+                            <p>
+                                Martedì — Domenica<br />
+                                19:00 — 23:30
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>Contatti</h3>
+
+                            <p>
+                                +39 081 123 4567<br />
+                                info@fornopizzeria.it
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <span> © 2026 FORNO. </span>
+
+                <span> Pizzeria contemporanea </span>
             </div>
+        </footer>
 
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <div class="footer-content">
-
-            <span>
-                © 2026 FORNO.
-            </span>
-
-            <span>
-                Pizzeria contemporanea
-            </span>
-
-        </div>
-
-    </footer>
-
-
-    <script src="js/script.js"></script>
-
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
